@@ -18,4 +18,7 @@
     <feature-packs>
         <feature-pack groupId="org.keycloak" artifactId="keycloak-server-feature-pack" version="${project.version}"/>
     </feature-packs>
+    <version-overrides>
+        <version-override groupId="org.apache.avro" artifactId="avro" version="1.9.1"/>
+    </version-overrides>
 </server-provisioning>
