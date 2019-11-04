@@ -19,6 +19,10 @@
         <feature-pack groupId="org.keycloak" artifactId="keycloak-server-feature-pack" version="${project.version}"/>
     </feature-packs>
     <version-overrides>
-      <version-override groupId="com.fasterxml.jackson.core" artifactId="jackson-databind" version="2.10.0"/>
+        <version-override groupId="org.apache.avro" artifactId="avro" version="1.9.1"/>
+        <version-override groupId="com.h2database" artifactId="h2" version="1.4.198"/>
+        <version-override groupId="org.apache.santuario" artifactId="xmlsec" version="2.1.4"/>
+        <version-override groupId="io.undertow" artifactId="undertow-servlet" version="2.0.23.Final"/>
+        <version-override groupId="com.fasterxml.jackson.core" artifactId="jackson-databind" version="2.10.0"/>
     </version-overrides>
 </server-provisioning>
