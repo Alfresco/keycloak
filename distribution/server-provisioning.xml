@@ -25,5 +25,6 @@
         <version-override groupId="io.undertow" artifactId="undertow-servlet" version="2.0.23.Final"/>
         <version-override groupId="com.fasterxml.jackson.core" artifactId="jackson-databind" version="2.10.0"/>
         <version-override groupId="org.codehaus.jackson" artifactId="jackson-mapper-asl" version="1.9.13.redhat-4"/>
+        <version-override groupId="org.codehaus.jackson" artifactId="jackson-jaxrs" version="1.9.13.redhat-4"/>                
     </version-overrides>
 </server-provisioning>
