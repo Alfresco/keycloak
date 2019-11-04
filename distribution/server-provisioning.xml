@@ -27,6 +27,7 @@
         <version-override groupId="org.codehaus.jackson" artifactId="jackson-mapper-asl" version="1.9.13.redhat-4"/>
         <version-override groupId="org.codehaus.jackson" artifactId="jackson-jaxrs" version="1.9.13.redhat-4"/>
         <version-override groupId="org.codehaus.jackson" artifactId="jackson-core-asl" version="1.9.13.redhat-4"/>
-        <version-override groupId="org.codehaus.jackson" artifactId="jackson-xc" version="1.9.13.redhat-4"/>        
+        <version-override groupId="org.codehaus.jackson" artifactId="jackson-xc" version="1.9.13.redhat-4"/>
+        <version-override groupId="com.thoughtworks.xstream" artifactId="xstream" version="1.4.11.1"/>
     </version-overrides>
 </server-provisioning>
