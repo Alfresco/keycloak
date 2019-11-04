@@ -1419,6 +1419,15 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <!-- for org.codehaus.jackson:jackson-mapper-asl -->
+        <repository>
+            <id>redhat-qa</id>
+            <name>Redgat GA</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
     <build>
