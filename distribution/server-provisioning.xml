@@ -29,5 +29,6 @@
         <version-override groupId="org.codehaus.jackson" artifactId="jackson-core-asl" version="1.9.13.redhat-4"/>
         <version-override groupId="org.codehaus.jackson" artifactId="jackson-xc" version="1.9.13.redhat-4"/>
         <version-override groupId="com.thoughtworks.xstream" artifactId="xstream" version="1.4.11.1"/>
+        <version-override groupId="io.netty" artifactId="netty-all" version="4.1.43.Final"/>
     </version-overrides>
 </server-provisioning>
