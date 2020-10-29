@@ -12,6 +12,7 @@ env:
   global:
     - MAVEN_SKIP_RC=true
     - MAVEN_OPTS="-Xms512m -Xmx1536m"
+    - THEME_VERSION=0.3.1
   matrix:
     - TESTS=unit
     - TESTS=server-group1
@@ -45,7 +46,30 @@ before_script:
 script: 
   - ./travis-run-tests.sh $TESTS
 
-after_success:
-  - .travis/docker-hub-master-trigger.sh
+stages:
+  - name: Test
+  - name: Deploy
+    if: tag IS present
+
+jobs:
+  include:
+    - stage: Deploy
+      env: # overwrite with empty
+      before_install: skip
+      script: skip
+      after_success: false
+      before_deploy:
+        - ./travis-build-server.sh
+        - echo "Prepare deployment of keycloak-$TRAVIS_TAG"
+        - ./add-alfresco-theme.sh
+      deploy:
+        provider: releases
+        api_key: $GITHUB_TOKEN
+        file: "distribution/server-dist/target/keycloak-$TRAVIS_TAG.zip"
+        skip_cleanup: true
+        edge: true
+        on:
+          tags: true
+          repo: Alfresco/keycloak
 
 sudo: false
