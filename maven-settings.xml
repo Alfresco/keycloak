@@ -25,6 +25,16 @@
             <updatePolicy>never</updatePolicy>
           </snapshots>
         </repository>
+          <repository>
+              <id>jboss-ga-repository</id>
+              <url>https://maven.repository.redhat.com/ga/all/</url>
+              <releases>
+                  <enabled>true</enabled>
+              </releases>
+              <snapshots>
+                  <enabled>false</enabled>
+              </snapshots>
+          </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
