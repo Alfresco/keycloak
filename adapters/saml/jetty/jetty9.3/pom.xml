@@ -28,7 +28,7 @@
     <artifactId>keycloak-saml-jetty93-adapter</artifactId>
     <name>Keycloak Jetty 9.3.x SAML Integration</name>
     <properties>
-        <jetty9.version>9.3.29.v20201019</jetty9.version>
+        <jetty9.version>9.4.41.v20210516</jetty9.version>
         <keycloak.osgi.export>
             org.keycloak.adapters.jetty.*
         </keycloak.osgi.export>
